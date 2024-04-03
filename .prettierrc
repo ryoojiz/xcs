@@ -1,0 +1,31 @@
+{
+  "singleQuote": true,
+  "printWidth": 120,
+  "editor.formatOnSave": true,
+  "proseWrap": "always",
+  "tabWidth": 2,
+  "requireConfig": false,
+  "useTabs": false,
+  "trailingComma": "none",
+  "bracketSpacing": true,
+  "jsxBracketSameLine": false,
+  "semi": true,
+  "singleAttributePerLine": true,
+  "importOrder": [
+    "^react$",
+    "^@chakra-ui/react",
+    "^@chakra-ui/icons",
+    "^react-icons/(.*)$",
+    "<THIRD_PARTY_MODULES>",
+    "^@/lib/(.*)$",
+    "^@/contexts/(.*)$",
+    "^@/hooks/(.*)$",
+    "^@/util/(.*)$",
+    "^@/assets/(.*)$",
+    "^@/layouts/(.*)$",
+    "^@/components/(.*)$",
+    "^[./]"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
+}
