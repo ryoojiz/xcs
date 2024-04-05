@@ -4,14 +4,16 @@ import { getAuth } from 'firebase/auth';
 // TODO: Replace the following with your app's Firebase project configuration
 // See: https://firebase.google.com/docs/web/learn-more#config-object
 const firebaseConfig = {
-  apiKey: 'AIzaSyBoNw4Rdor3ZtV1rvW-gHX8sQSTo4WFyrA',
-  authDomain: 'xcs-v2.firebaseapp.com',
-  projectId: 'xcs-v2',
-  storageBucket: 'xcs-v2.appspot.com',
-  messagingSenderId: '14083520042',
-  appId: '1:14083520042:web:66c6be95820ccdd6c83553',
-  measurementId: 'G-WWDP45MK4K'
+  apiKey: "AIzaSyAnNFETgIp92Ru22WqAG-p_yRsrjk9QjiQ",
+  authDomain: "xcsbyrestrafes.firebaseapp.com",
+  projectId: "xcsbyrestrafes",
+  storageBucket: "xcsbyrestrafes.appspot.com",
+  messagingSenderId: "349487090032",
+  appId: "1:349487090032:web:72b252e9bf49acfabfa7b5",
+  measurementId: "G-N12CXH8X0F"
+
 };
+
 
 // Initialize Firebase
 const app = () => {
