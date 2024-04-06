@@ -2691,6 +2691,16 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@oven/bun-windows-x64-baseline@1.1.2":
+  version "1.1.2"
+  resolved "https://registry.npmjs.org/@oven/bun-windows-x64-baseline/-/bun-windows-x64-baseline-1.1.2.tgz"
+  integrity sha512-pVCUXC/LvyhUJKporOjobhTCzIatX8oF+YGjeF99duEgAWZmx4o6NOZfak29eK+KCGJlj3gKkxRq4qdO3GSI1Q==
+
+"@oven/bun-windows-x64@1.1.2":
+  version "1.1.2"
+  resolved "https://registry.npmjs.org/@oven/bun-windows-x64/-/bun-windows-x64-1.1.2.tgz"
+  integrity sha512-y84cNra4LA90YR1iBThHmXdV1/A1pKjrO/XifoesbwvX0LoyzV00KKX2DRNowMY1Z6GZI2ITdrKoOhYoojY0cg==
+
 "@polka/url@^1.0.0-next.20":
   version "1.0.0-next.23"
   resolved "https://registry.npmjs.org/@polka/url/-/url-1.0.0-next.23.tgz"
@@ -3829,6 +3839,20 @@ builtin-modules@^3.1.0:
   version "3.3.0"
   resolved "https://registry.npmjs.org/builtin-modules/-/builtin-modules-3.3.0.tgz"
   integrity sha512-zhaCDicdLuWN5UbN5IMnFqNMhNfo919sH85y2/ea+5Yg9TsTkeZxpL+JLbp6cgYFS4sRLp3YV4S6yDuqVWHYOw==
+
+bun@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.npmjs.org/bun/-/bun-1.1.2.tgz"
+  integrity sha512-18RVJexMTdkCnihCJGSy0i5W9rHp3YdCUH+BpqRMv+xMr0ZC5y33WQoQTTMMpaSiuVcWckddetzxtMEnBsqL4w==
+  optionalDependencies:
+    "@oven/bun-darwin-aarch64" "1.1.2"
+    "@oven/bun-darwin-x64" "1.1.2"
+    "@oven/bun-darwin-x64-baseline" "1.1.2"
+    "@oven/bun-linux-aarch64" "1.1.2"
+    "@oven/bun-linux-x64" "1.1.2"
+    "@oven/bun-linux-x64-baseline" "1.1.2"
+    "@oven/bun-windows-x64" "1.1.2"
+    "@oven/bun-windows-x64-baseline" "1.1.2"
 
 busboy@1.6.0:
   version "1.6.0"

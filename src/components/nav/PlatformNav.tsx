@@ -166,6 +166,7 @@ function AvatarPopover({ currentUser, onLogoutOpen }: { currentUser?: any; onLog
                   </Button>
                 </>
               }
+              console.log(currentUser)
               {currentUser?.platform.staff && (
                 <Button
                   as={NextLink}
