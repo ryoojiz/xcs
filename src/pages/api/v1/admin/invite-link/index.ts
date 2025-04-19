@@ -18,7 +18,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   const users = db.collection('users');
   const invitations = db.collection('invitations');
   const user = await users.findOne({ id: uid });
-
+  
   if (!user) return res.status(404).json({ message: 'User not found.' });
   if (!user.platform.staff) return res.status(403).json({ message: 'Forbidden.' });
 
