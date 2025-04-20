@@ -1,0 +1,92 @@
+[{
+  "_id": {
+    "$oid": "661102e895b623275e76116a"
+  },
+  "id": "ndne26191m7ufag9",
+  "isPersonal": false,
+  "name": "Amperra Systemes",
+  "description": "",
+  "ownerId": "g2EmGsfL9MfPicYgrXsCgHcG0aE2",
+  "avatar": "https://xcs.restrafes.co/images/default-avatar-organization.png",
+  "accessGroups": {},
+  "members": {
+    "g2EmGsfL9MfPicYgrXsCgHcG0aE2": {
+      "type": "user",
+      "id": "g2EmGsfL9MfPicYgrXsCgHcG0aE2",
+      "formattedId": "g2EmGsfL9MfPicYgrXsCgHcG0aE2",
+      "role": 2,
+      "accessGroups": [],
+      "scanData": {},
+      "joinedAt": {
+        "$date": "2024-04-06T09:01:39.762Z"
+      },
+      "updatedAt": {
+        "$date": "2024-04-06T09:01:39.762Z"
+      }
+    },
+    "FWO4075ks6OzGIpJKb4MTvS2iZd2": {
+      "type": "user",
+      "id": "FWO4075ks6OzGIpJKb4MTvS2iZd2",
+      "formattedId": "FWO4075ks6OzGIpJKb4MTvS2iZd2",
+      "role": 1,
+      "accessGroups": [],
+      "scanData": {},
+      "joinedAt": {
+        "$date": "2024-04-06T09:01:39.762Z"
+      },
+      "updatedAt": {
+        "$date": "2024-04-06T09:01:39.762Z"
+      }
+    }
+  },
+  "logs": [
+    {
+      "type": "organization-created",
+      "performer": "g2EmGsfL9MfPicYgrXsCgHcG0aE2",
+      "timestamp": {
+        "$date": "2024-04-06T08:08:08.434Z"
+      }
+    },
+    {
+      "type": "location-created",
+      "performer": "g2EmGsfL9MfPicYgrXsCgHcG0aE2",
+      "timestamp": {
+        "$date": "2024-04-06T08:13:10.267Z"
+      },
+      "locationId": "dsrhuqtmmquqfdcp"
+    },
+    {
+      "type": "api-key-generated",
+      "performer": "g2EmGsfL9MfPicYgrXsCgHcG0aE2",
+      "timestamp": {
+        "$date": "2024-04-06T08:13:18.975Z"
+      },
+      "locationId": "dsrhuqtmmquqfdcp"
+    }
+  ],
+  "apiKeys": {
+    "35cc6bf67add4927b4d5da6da8b95221": {
+      "author": "g2EmGsfL9MfPicYgrXsCgHcG0aE2",
+      "locationId": "dsrhuqtmmquqfdcp",
+      "createdAt": {
+        "$date": "2024-04-06T08:13:18.975Z"
+      },
+      "lastUsedAt": null
+    }
+  },
+  "createdAt": {
+    "$date": "2024-04-06T08:08:08.434Z"
+  },
+  "createdBy": "g2EmGsfL9MfPicYgrXsCgHcG0aE2",
+  "updatedAt": {
+    "$date": "2024-04-06T08:08:08.434Z"
+  },
+  "verified": false,
+  "statistics": {
+    "scans": {
+      "total": 0,
+      "denied": 0,
+      "granted": 0
+    }
+  }
+}]

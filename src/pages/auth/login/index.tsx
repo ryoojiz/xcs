@@ -11,6 +11,7 @@ import {
   Input,
   InputGroup,
   InputLeftElement,
+  Image,
   Link,
   Modal,
   ModalBody,
@@ -167,19 +168,19 @@ export default function Login() {
                   outline={['0px solid', '1px solid']}
                   outlineColor={['unset', useColorModeValue('gray.200', 'gray.700')]}
                   rounded={'lg'}
-                  maxW={"container.sm"}
+                  maxW={"container.md"}
                   overflow={'hidden'}
                   height={{ base: 'auto', md: '500px' }}
                 // boxShadow={'rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;'}
                 >
-                  {/* <Image flex={"0 0 auto"} display={{ base: "none", md: "flex" }} src={'/images/login4.jpeg'} alt={'Login'} objectFit={'cover'} w={'sm'} h={"full"} /> */}
-                  {/* <Flex flex={"0 0 auto"} display={{ base: "none", md: "flex" }} objectFit={'cover'} w={'sm'} h={"full"} flexDir={'column'}>
+                  <Image flex={"0 0 auto"} display={{ base: "none", md: "flex" }} src={'/images/login4.jpeg'} alt={'Login'} objectFit={'cover'} w={'sm'} h={"full"} />
+                  <Flex flex={"0 0 auto"} display={{ base: "none", md: "flex" }} objectFit={'cover'} w={'sm'} h={"full"} flexDir={'column'}>
                     <Box
                       backgroundColor={useColorModeValue('gray.200', 'gray.700')}
                       w={'full'}
                       h={'full'}
                     />
-                  </Flex> */}
+                  </Flex>
                   <Flex flex={"1 1 auto"} flexDir={'column'} justify={"center"} align={"flex-start"} py={8} px={10}>
                     <Box
                       w={'full'}
