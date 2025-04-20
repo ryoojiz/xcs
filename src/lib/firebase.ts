@@ -7,7 +7,7 @@ const firebaseConfig = {
   apiKey: "AIzaSyAnNFETgIp92Ru22WqAG-p_yRsrjk9QjiQ",
   authDomain: "xcsbyrestrafes.firebaseapp.com",
   projectId: "xcsbyrestrafes",
-  storageBucket: "xcsbyrestrafes.appspot.com",
+  storageBucket: "xcsbyrestrafes.firebasestorage.app",
   messagingSenderId: "349487090032",
   appId: "1:349487090032:web:72b252e9bf49acfabfa7b5",
   measurementId: "G-N12CXH8X0F"

@@ -31,7 +31,7 @@ const app = () => {
 
 app();
 
-const bucket = getStorage().bucket('xcs-v2.appspot.com');
+const bucket = getStorage().bucket('xcsbyrestrafes.firebasestorage.app');
 // admin.storage().bucket("xcs-v2").upload("test.txt");
 
 export { admin, app, bucket };
@@ -67,7 +67,7 @@ export async function uploadProfilePicture(
   await file
     .save(picture, {
       metadata: {
-        contentType: format === 'gif' ? 'image/gif' : 'image/jpeg'
+        contentType: format === 'gif' ? 'image/gif' : ' image/jpeg'
       }
     })
     .then(() => {

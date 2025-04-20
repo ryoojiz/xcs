@@ -32,6 +32,16 @@ export default function Footer({ type = 'platform' }: { type?: 'public' | 'platf
           </Text>{' '}
           All rights reserved.
         </Text>
+        <Text>
+          System hosted by
+          <Text
+            as={'span'}
+            fontWeight={'bold'}
+            letterSpacing={'tight'}
+          >
+             PT Amperra Sambung Semesta Sentosa
+          </Text>{' '}
+        </Text>
         <Flex align={'center'} justify={'center'} fontSize={'sm'}>
           <Link
             as={NextLink}
