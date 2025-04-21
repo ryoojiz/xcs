@@ -54,7 +54,7 @@ export default function Home({ allPostsData: posts }: { allPostsData: any }) {
             w={'full'}
           >
             <Image
-              src={'/images/home-hero.jpg'}
+              src={'/images/home-hero.png'}
               alt={'Home Image'}
               w={"full"}
               height={"full"}
@@ -64,7 +64,50 @@ export default function Home({ allPostsData: posts }: { allPostsData: any }) {
             />
           </Flex>
         </Flex>
-        {/* <Flex
+        <Flex
+          minH={'50vh'}
+          maxW={'container.xl'}
+          mx={{ base: 4, md: 16 }}
+          py={16}
+          borderBottom={'1px solid'}
+          borderColor={useColorModeValue('blackAlpha.900', 'whiteAlpha.900')}
+        >
+          <Box
+            flexGrow={1}
+            flexBasis={1}
+            display={{ base: 'none', md: 'block' }}
+          >
+            <Heading
+              size={'xl'}
+              fontWeight={'400'}
+              pb={2}
+            >
+              Apa itu Restrafes XCS?
+            </Heading>
+          </Box>
+          <Box
+            flexGrow={1}
+            flexBasis={1}
+          >
+            <Heading
+              size={'xl'}
+              fontWeight={'400'}
+              pb={2}
+            >
+              What is Restrafes XCS?
+            </Heading>
+            <Text fontSize={'xl'}>
+              Restrafes XCS is a powerful access control system designed to help you manage access points for your
+              building. With Restrafes XCS, you can easily and securely control who has access to your property, including
+              employees and visitors. The system is highly customizable, allowing you to set access levels and permissions
+              for different users, and offers a range of advanced features such as real-time monitoring, reporting, and
+              reverse-compatibility with other systems. Whether you&apos;re looking to enhance the security of your
+              business or residential property, Restrafes XCS provides the flexibility and reliability you need
+              to manage access with confidence.
+            </Text>
+          </Box>
+        </Flex>
+                <Flex
           flexDir={'column'}
           minH={'50vh'}
           w={'container.xl'}
@@ -105,49 +148,6 @@ export default function Home({ allPostsData: posts }: { allPostsData: any }) {
                 </Text>
               </Flex>
             </Flex>
-          </Box>
-        </Flex> */}
-        <Flex
-          minH={'50vh'}
-          maxW={'container.xl'}
-          mx={{ base: 4, md: 16 }}
-          py={16}
-          borderBottom={'1px solid'}
-          borderColor={useColorModeValue('blackAlpha.900', 'whiteAlpha.900')}
-        >
-          <Box
-            flexGrow={1}
-            flexBasis={1}
-            display={{ base: 'none', md: 'block' }}
-          >
-            <Heading
-              size={'xl'}
-              fontWeight={'400'}
-              pb={2}
-            >
-              Qu&apos;est-ce que Restrafes XCS?
-            </Heading>
-          </Box>
-          <Box
-            flexGrow={1}
-            flexBasis={1}
-          >
-            <Heading
-              size={'xl'}
-              fontWeight={'400'}
-              pb={2}
-            >
-              What is Restrafes XCS?
-            </Heading>
-            <Text fontSize={'xl'}>
-              Restrafes XCS is a powerful access control system designed to help you manage access points for your
-              building. With Restrafes XCS, you can easily and securely control who has access to your property, including
-              employees and visitors. The system is highly customizable, allowing you to set access levels and permissions
-              for different users, and offers a range of advanced features such as real-time monitoring, reporting, and
-              reverse-compatibility with other systems. Whether you&apos;re looking to enhance the security of your
-              business or residential property, Restrafes XCS provides the flexibility and reliability you need
-              to manage access with confidence.
-            </Text>
           </Box>
         </Flex>
         <Flex

@@ -181,6 +181,13 @@ export default function Nav({ type }: { type?: string }) {
               <Icon as={BsArrowUpRight} ml={1} h={3} />
             </NavLink> */}
             <NavLink
+              href={'https://store.ryj.my.id'}
+              pathname={pathname as string}
+            >
+              Storefront
+              <Icon as={BsArrowUpRight} ml={1} h={3} />
+            </NavLink>
+            <NavLink
               href={'/auth/login'}
               pathname={pathname as string}
             >

@@ -35,7 +35,7 @@ import {
 import { HamburgerIcon } from '@chakra-ui/icons';
 
 import { AiFillHome, AiFillInfoCircle, AiFillSetting } from 'react-icons/ai';
-import { BiSolidExit, BiSolidNotification, BiSolidTime } from 'react-icons/bi';
+import { BiSolidExit, BiSolidNotification, BiSolidTime, BiSolidStoreAlt } from 'react-icons/bi';
 import { FaBell, FaBuilding, FaIdBadge } from 'react-icons/fa';
 import { ImTree } from 'react-icons/im';
 import { IoHomeSharp } from 'react-icons/io5';
@@ -470,6 +470,14 @@ export default function PlatformNav({ type, title }: { type?: string; title?: st
                 leftIcon={<AiFillInfoCircle />}
               >
                 Help & Information
+              </NavLink>
+              <NavLink
+                href={'https://xcs-docs.restrafes.co/'}
+                target={'_blank'}
+                pathname={pathname}
+                leftIcon={<BiSolidStoreAlt />}
+              >
+                Storefront
               </NavLink>
             </>
           )}

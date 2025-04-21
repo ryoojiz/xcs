@@ -22,6 +22,8 @@ export default function Footer({ type = 'platform' }: { type?: 'public' | 'platf
         align={'center'}
         justify={'center'}
       >
+
+        <Flex align={'center'} justify={'center'} fontSize={'sm'}>
         <Text>
           <Text
             as={'span'}
@@ -32,16 +34,23 @@ export default function Footer({ type = 'platform' }: { type?: 'public' | 'platf
           </Text>{' '}
           All rights reserved.
         </Text>
+          <Divider
+            orientation={'vertical'}
+            mx={2}
+            h={'1rem'}
+            borderColor={useColorModeValue('gray.300', 'gray.700')}
+          />
         <Text>
-          System hosted by
+          System hosted and forked by{' '}
           <Text
             as={'span'}
             fontWeight={'bold'}
             letterSpacing={'tight'}
           >
              PT Amperra Sambung Semesta Sentosa
-          </Text>{' '}
+          </Text>
         </Text>
+        </Flex>
         <Flex align={'center'} justify={'center'} fontSize={'sm'}>
           <Link
             as={NextLink}
