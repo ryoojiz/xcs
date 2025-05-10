@@ -116,15 +116,15 @@ export default function CheckActivationCodeModal({
                 </ModalBody>
 
                 <ModalFooter>
+                  <Button onClick={onClose}>Cancel</Button>
                   <Button
                     colorScheme={'black'}
-                    mr={3}
+                    ml={3}
                     isLoading={props.isSubmitting}
                     type={'submit'}
                   >
                     Submit
                   </Button>
-                  <Button onClick={onClose}>Cancel</Button>
                 </ModalFooter>
               </ModalContent>
             </Form>

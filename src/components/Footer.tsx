@@ -47,8 +47,9 @@ export default function Footer({ type = 'platform' }: { type?: 'public' | 'platf
             fontWeight={'bold'}
             letterSpacing={'tight'}
           >
-             PT Amperra Sambung Semesta Sentosa
+             PT Amperra Sambung Semesta Sentosa{' '}
           </Text>
+          under the <Link fontWeight={'bold'} as={NextLink} href={'/LICENSE.txt'}>MIT License.</Link>
         </Text>
         </Flex>
         <Flex align={'center'} justify={'center'} fontSize={'sm'}>

@@ -18,7 +18,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   const db = mongoClient.db(process.env.MONGODB_DB as string);
   const statistics = db.collection('statistics');
 
-  const globalStatistics = await statistics.findOne({ id: 'global' });
+  const globalStatistics = await statistics.findOne({ id: 'global ' });
   if (!globalStatistics) {
     return res.status(404).json({ message: 'Statistics not found' });
   }

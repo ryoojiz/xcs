@@ -368,7 +368,7 @@ export default function PlatformNav({ type, title }: { type?: string; title?: st
           >
             <Flex
               position={'relative'}
-              w={'128px'}
+              w={'150px'}
               h={'100%'}
             >
               <NextImage

@@ -122,6 +122,7 @@ export default function Nav({ type }: { type?: string }) {
         h={'6rem'}
         align={'center'}
         bg={useColorModeValue('white', 'gray.800')}
+        borderBottom={'1px solid'}
         borderColor={useColorModeValue('gray.300', 'gray.700')}
         zIndex={50}
       >
@@ -149,7 +150,7 @@ export default function Nav({ type }: { type?: string }) {
           >
             <Flex
               position={'relative'}
-              w={'128px'}
+              w={'150px'}
               h={'100%'}
             >
               <NextImage
