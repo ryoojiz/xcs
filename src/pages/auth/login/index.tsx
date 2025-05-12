@@ -205,7 +205,7 @@ export default function Login() {
             {(props) => (
               <Form>
                 <ModalBody>
-                  <Text mb={4}>Enter your email address below and we'll send you a link to reset your password.</Text>
+                  <Text mb={4}>Enter your email address below and we&apos;ll send you a link to reset your password.</Text>
                   <Field name="email">
                     {({ field, form }: any) => (
                       <FormControl isInvalid={form.errors.email && form.touched.email}>
@@ -225,7 +225,6 @@ export default function Login() {
                     Cancel
                   </Button>
                   <Button
-                    colorScheme="blue"
                     isLoading={props.isSubmitting}
                     type="submit"
                   >
