@@ -525,7 +525,7 @@ export default function Login() {
                                       />
                                     </InputGroup>
                                   <Text fontSize={'sm'}>
-                                    Don't have an activation code?{' '}
+                                    Don&apos;t have an activation code?{' '}
                                     <Text as={'span'}>
                                     <Link
                                       as={NextLink}
