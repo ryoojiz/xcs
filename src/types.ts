@@ -48,9 +48,10 @@ export interface User {
     referrals: number;
     scans: number;
     organizationInvitations?: number;
-  };
-  achievements?: Record<string, Achievement>;
+  };  achievements?: Record<string, Achievement>;
   organizations?: Organization[];
+  license_key: string;
+  gumroad_status: 'active' | 'inactive' | 'unknown';
 }
 
 export interface Organization {

@@ -74,7 +74,7 @@ To configure access points for this location, visit:
 --]]
 
 local settings = {
-	["url"] = "https://xcs.restrafes.co/api/v1/ingame";
+	["url"] = "https://wyre.ryj.my.id/api/v1/ingame";
 	
 	["placeId"] = "{{locationId}}";
 	["apiKey"] = "{{apiKey}}";

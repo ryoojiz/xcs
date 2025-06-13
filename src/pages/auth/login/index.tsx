@@ -524,6 +524,20 @@ export default function Login() {
                                         variant={'outline'}
                                       />
                                     </InputGroup>
+                                  <Text fontSize={'sm'}>
+                                    Don't have an activation code?{' '}
+                                    <Text as={'span'}>
+                                    <Link
+                                      as={NextLink}
+                                      href={'https://amperra.gumroad.com/l/wyre'}
+                                      textDecor={'underline'}
+                                      textUnderlineOffset={4}
+                                      whiteSpace={'nowrap'}
+                                    >
+                                      Purchase a license here.
+                                    </Link>
+                                    </Text>{' '}
+                                  </Text>
                                   </FormControl>
                                 )}
                               </Field>

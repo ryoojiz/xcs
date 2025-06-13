@@ -61,7 +61,7 @@ export default function Invitation({ invite, errorMessage }: { invite: Invitatio
   return (
     <>
       <Head>
-        <title>Invitation - Restrafes XCS</title>
+        <title>Invitation - Wyre Management</title>
       </Head>
       <Container
         maxW={'container.lg'}
@@ -81,7 +81,7 @@ export default function Invitation({ invite, errorMessage }: { invite: Invitatio
           >
             <Image
               src={useColorModeValue('/images/logo-black.png', '/images/logo-white.png')}
-              alt={'Restrafes XCS Logo'}
+              alt={'Wyre Management Logo'}
               w={'auto'}
               h={'24px'}
               objectFit={'contain'}
@@ -243,7 +243,7 @@ export default function Invitation({ invite, errorMessage }: { invite: Invitatio
                           as={'span'}
                           fontWeight={'bold'}
                         >
-                          Restrafes XCS
+                          Wyre Management
                         </Text>{' '}
                         <Text
                           as={'span'}

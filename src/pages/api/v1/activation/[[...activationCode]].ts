@@ -1,6 +1,7 @@
 import { admin, app } from '@/pages/api/firebase';
 import { Invitation, User } from '@/types';
 import { NextApiRequest, NextApiResponse } from 'next';
+import { verifyGumroadLicense } from '@/lib/gumroad';
 
 import clientPromise from '@/lib/mongodb';
 const sgMail = require('@sendgrid/mail');
@@ -13,34 +14,60 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   let { activationCode } = req.query as { activationCode: string };
   activationCode = decodeURIComponent(activationCode);
 
+  console.log('Activation attempt with code:', activationCode);
+
+  // First, try to find an invitation code
   const invitation = (await invitations.findOne({
     type: 'xcs',
     code: activationCode
   })) as Invitation | null;
 
+  let isGumroadLicense = false;
+  let gumroadVerification = null;
+
+  // If no invitation found, check if it's a Gumroad license key
   if (!invitation) {
-    return res.status(404).json({
-      valid: false,
-      message: 'Invalid activation code. Please check the code and try again.'
-    });
+    console.log('No invitation found, checking if it\'s a Gumroad license key');
+    gumroadVerification = await verifyGumroadLicense(activationCode);
+    isGumroadLicense = gumroadVerification.isValid;
+    
+    if (!isGumroadLicense) {
+      console.log('Neither valid invitation nor valid Gumroad license');
+      return res.status(404).json({
+        valid: false,
+        message: 'Invalid activation code or license key. Please check the code and try again.'
+      });
+    }
+    
+    console.log('Valid Gumroad license found');
+  } else {
+    console.log('Valid invitation found:', invitation.code);
   }
 
   if (req.method === 'GET') {
-    if (invitation?.maxUses > -1 && invitation?.uses >= invitation?.maxUses) {
+    // For invitation codes, check max uses
+    if (invitation && invitation?.maxUses > -1 && invitation?.uses >= invitation?.maxUses) {
       return res.status(403).json({
         valid: false,
         message: `This activation code has reached its maximum uses.`
       });
     }
 
+    // For Gumroad licenses, check if active
+    if (isGumroadLicense && gumroadVerification && !gumroadVerification.isActive) {
+      return res.status(403).json({
+        valid: false,
+        message: 'This Gumroad license is not active. Please check your subscription status.'
+      });
+    }
+
     return res.status(200).json({
       valid: true,
-      message: 'Valid activation code.'
+      message: isGumroadLicense ? 'Valid Gumroad license key.' : 'Valid activation code.'
     });
-  }
-
-  if (req.method === 'POST') {
+  }  if (req.method === 'POST') {
     let { activationCode } = req.query as { activationCode: string };
+    activationCode = decodeURIComponent(activationCode);
 
     let { displayName, email, username, password } = req.body as {
       displayName: string;
@@ -49,13 +76,51 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       password: string;
     };
 
+    console.log('Registration attempt with:', { displayName, email, username, activationCode });
+
     const mongoClient = await clientPromise;
     const db = mongoClient.db(process.env.MONGODB_DB as string);
     const users = db.collection('users');
+    const invitations = db.collection('invitations');
 
-    if (invitation.uses > -1 && invitation.uses >= invitation.maxUses) {
+    // Re-validate the activation code/license for POST request
+    const postInvitation = (await invitations.findOne({
+      type: 'xcs',
+      code: activationCode
+    })) as Invitation | null;
+
+    let postIsGumroadLicense = false;
+    let postGumroadVerification = null;
+
+    // If no invitation found, check if it's a Gumroad license key
+    if (!postInvitation) {
+      console.log('No invitation found in POST, checking if it\'s a Gumroad license key');
+      postGumroadVerification = await verifyGumroadLicense(activationCode);
+      postIsGumroadLicense = postGumroadVerification.isValid;
+      
+      if (!postIsGumroadLicense) {
+        console.log('Neither valid invitation nor valid Gumroad license in POST');
+        return res.status(404).json({
+          message: 'Invalid activation code or license key. Please check the code and try again.'
+        });
+      }
+      
+      console.log('Valid Gumroad license found in POST');
+    } else {
+      console.log('Valid invitation found in POST:', postInvitation.code);
+    }
+
+    // Check invitation-specific limitations
+    if (postInvitation && postInvitation.maxUses > -1 && postInvitation.uses >= postInvitation.maxUses) {
       return res.status(403).json({
         message: `This activation code has reached its maximum uses.`
+      });
+    }
+
+    // For Gumroad licenses, ensure it's still active
+    if (postIsGumroadLicense && postGumroadVerification && !postGumroadVerification.isActive) {
+      return res.status(403).json({
+        message: 'This Gumroad license is not active. Please check your subscription status.'
       });
     }
 
@@ -194,12 +259,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
               url: `${process.env.NEXT_PUBLIC_ROOT_URL}/home`
             }
           }
-        ],
-        platform: {
+        ],        platform: {
           staff: false,
           staffTitle: null,
           membership: 0,
-          invites: invitation.startingReferrals || 0
+          invites: postInvitation?.startingReferrals || 0
         },
         payment: {
           customerId: null
@@ -220,24 +284,33 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
           referrals: 0,
           scans: 0
         },
-        achievements: {},
-
-        sponsorId: invitation.isSponsor ? invitation.createdBy : null,
+        achievements: {},        license_key: postIsGumroadLicense ? activationCode : '',
+        gumroad_status: postIsGumroadLicense ? 'active' as const : 'unknown' as const,
+        sponsorId: postInvitation?.isSponsor ? postInvitation.createdBy : null,
         createdAt: new Date(),
         updatedAt: new Date()
-      } as User)
-      .then(async (result) => {
-        // max uses
-        if (invitation.maxUses > -1 && invitation.uses + 1 >= invitation.maxUses) {
-          await invitations.deleteOne({
-            code: activationCode[0]
-          });
-        } else {
-          await invitations.updateOne({ code: activationCode[0] }, { $inc: { uses: 1 } });
+      } as User)      .then(async (result) => {
+        // Only handle invitation-specific logic if this was an invitation code
+        if (postInvitation) {
+          // max uses
+          if (postInvitation.maxUses > -1 && postInvitation.uses + 1 >= postInvitation.maxUses) {
+            await invitations.deleteOne({
+              code: activationCode
+            });
+          } else {
+            await invitations.updateOne({ code: activationCode }, { $inc: { uses: 1 } });
+          }
+          // sponsors
+          if (postInvitation.isSponsor) {
+            await users.updateOne({ id: postInvitation.createdBy }, { $inc: { 'platform.invites': -1 } });
+          }
         }
-        // sponsors
-        if (invitation.isSponsor) {
-          await users.updateOne({ id: invitation.createdBy }, { $inc: { 'platform.invites': -1 } });
+        console.log('User created successfully:', firebaseUser.uid);
+        
+        if (postIsGumroadLicense) {
+          console.log('User registered with Gumroad license:', activationCode);
+        } else {
+          console.log('User registered with invitation code:', activationCode);
         }
       })
       .catch((error) => {
@@ -277,11 +350,12 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       });
     } catch (error) {
       console.log(error);
-    }
-
-    return res.status(200).json({
-      message: 'Successfully registered! You may now login.',
-      success: true
+    }    return res.status(200).json({
+      message: postIsGumroadLicense 
+        ? 'Successfully registered with Gumroad license! You may now login.' 
+        : 'Successfully registered with invitation code! You may now login.',
+      success: true,
+      registrationType: postIsGumroadLicense ? 'gumroad' : 'invitation'
     });
   }
 
