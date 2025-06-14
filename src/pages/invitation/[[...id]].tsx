@@ -70,7 +70,7 @@ export default function Invite({ invite, errorMessage }: { invite: any; errorMes
             />
             <meta
               name="og:url"
-              content={`https://xcs.restrafes.co/invite/${query.id}`}
+              content={`https://wyre.ryj.my.id/invite/${query.id}`}
             />
             <meta
               name="og:type"

@@ -105,7 +105,7 @@ export default function Login() {
         />
         <meta
           name="og:url"
-          content="https://xcs.restrafes.co/login"
+          content="https://wyre.ryj.my.id/login"
         />
         <meta
           property="og:image"

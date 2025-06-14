@@ -27,7 +27,7 @@
 				<Z>0</Z>
 			</Vector3>
 			<token name="ModelStreamingMode">0</token>
-			<string name="Name">Restrafes XCS</string>
+			<string name="Name">Amperra Wyre</string>
 			<bool name="NeedsPivotMigration">false</bool>
 			<Ref name="PrimaryPart">null</Ref>
 			<float name="ScaleFactor">1</float>
@@ -58,9 +58,9 @@
 				<string name="ScriptGuid">{B88BC829-2E70-458E-9567-27196412A674}</string>
 				<ProtectedString name="Source"><![CDATA[--[[
 
-Restrafes XCS - Access Control
+Wyre Management - Access Control
 
-RESTRAFES & CO.
+Amperra Systems
 
 ---------------------------------------------------
 
@@ -425,7 +425,7 @@ _m.init({["config"]=require(script.Parent);});
 							<token name="KeyboardKeyCode">101</token>
 							<float name="MaxActivationDistance">3</float>
 							<string name="Name">xcsInteraction</string>
-							<string name="ObjectText">Restrafes XCS</string>
+							<string name="ObjectText">Wyre Management</string>
 							<bool name="RequiresLineOfSight">true</bool>
 							<Ref name="RootLocalizationTable">null</Ref>
 							<int64 name="SourceAssetId">-1</int64>
@@ -638,9 +638,9 @@ _m.init({["config"]=require(script.Parent);});
 						<string name="ScriptGuid">{E15B3E24-9BEB-4154-9296-28F128C272E9}</string>
 						<ProtectedString name="Source"><![CDATA[--[[
 
-Restrafes XCS - Access Control
+Wyre Management - Access Control
 
-RESTRAFES & CO.
+Amperra Systems
 
 ---------------------------------------------------
 
@@ -663,7 +663,7 @@ events.disarmed: The event that will fire when the access point is disarmed.
 events.disabled: The event that will fire when the access point is disabled.
 
 The scan data that is passed through each event can be configured on the platform website
-(https://xcs.restrafes.co).
+(https://wyre.ryj.my.id).
 
 --]]
 

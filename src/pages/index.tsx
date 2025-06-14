@@ -21,15 +21,15 @@ export default function Homepage({ allPostsData }: { allPostsData: any }) {
         <title>Home - Restrafes XCS</title>
         <meta
           property="og:title"
-          content="Home - Restrafes XCS"
+          content="Home - Wyre Management"
         />
         <meta
           property="og:site_name"
-          content="Restrafes XCS"
+          content="Wyre Management"
         />
         <meta
           property="og:url"
-          content="https://xcs.restrafes.co"
+          content="https://wyre.ryj.my.id"
         />
         <meta
           property="og:description"

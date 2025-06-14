@@ -82,7 +82,7 @@ export default function Home({ allPostsData: posts }: { allPostsData: any }) {
               fontWeight={'400'}
               pb={2}
             >
-              Apa itu Restrafes XCS?
+              Apa itu Wyre Management?
             </Heading>
           </Box>
           <Box

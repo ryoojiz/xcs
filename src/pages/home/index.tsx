@@ -137,7 +137,7 @@ export default function PlatformHome({ posts }: any) {
         />
         <meta
           property="og:url"
-          content="https://xcs.restrafes.co"
+          content="https://wyre.ryj.my.id"
         />
         <meta
           property="og:type"

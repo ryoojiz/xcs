@@ -104,7 +104,7 @@ export default function Nav({ type }: { type?: string }) {
 
   return (
     <Suspense>
-      {alertVisible &&
+      {/* {alertVisible &&
         <Flex px={{ base: 4, md: 16 }} py={{ base: 8, md: 4 }} w={'full'} minH={'4rem'} bg={useColorModeValue('blackAlpha.900', 'white')} color={useColorModeValue('white', 'black')} align={'center'} justify={'flex-start'}>
           <Heading size={'sm'} fontWeight={'normal'}>
             We&apos;ve begun rolling out early access to those part of the beta program.
@@ -113,7 +113,7 @@ export default function Nav({ type }: { type?: string }) {
           <Spacer />
           <CloseButton onClick={() => { dismissAlert(); }} />
         </Flex>
-      }
+      } */}
       <Flex
         as="nav"
         px={14}
@@ -158,7 +158,7 @@ export default function Nav({ type }: { type?: string }) {
                 priority={true}
                 fill={true}
                 quality={64}
-                alt={'Restrafes XCS'}
+                alt={'Wyre Management'}
                 style={{
                   objectFit: 'contain'
                 }}

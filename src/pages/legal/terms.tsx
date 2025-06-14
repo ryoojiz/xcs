@@ -25,7 +25,7 @@ export default function Terms() {
         <Box>
           <Text pb={4}>
             These terms of use govern your use of the Restrafes XCS website, products, and services (collectively
-            &quot;Services&quot;) available at <Link href="https://xcs.restrafes.co">xcs.restrafes.co</Link>. By
+            &quot;Services&quot;) available at <Link href="https://wyre.ryj.my.id">wyre.ryj.my.id</Link>. By
             accessing or using the Services, you agree to be bound by these terms. If you do not agree to these terms,
             do not access or use the Services.
           </Text>

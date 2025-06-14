@@ -400,7 +400,7 @@ export default async function handler(req: NextRequest) {
                 },
                 author: {
                   name: 'Restrafes XCS',
-                  url: 'https://xcs.restrafes.co',
+                  url: 'https://wyre.ryj.my.id',
                   icon_url: avatarUrl
                 },
                 fields: [
