@@ -7,7 +7,7 @@ export default function Terms() {
   return (
     <>
       <Head>
-        <title>Terms of Use - Restrafes XCS</title>
+        <title>Terms of Use - Amperra Wyre</title>
       </Head>
       <Nav />
       <Box bg={useColorModeValue('black', 'white')} w={'full'} h={'240px'} />
@@ -24,7 +24,7 @@ export default function Terms() {
         </Heading>
         <Box>
           <Text pb={4}>
-            These terms of use govern your use of the Restrafes XCS website, products, and services (collectively
+            These terms of use govern your use of the Amperra Wyre website, products, and services (collectively
             &quot;Services&quot;) available at <Link href="https://wyre.ryj.my.id">wyre.ryj.my.id</Link>. By
             accessing or using the Services, you agree to be bound by these terms. If you do not agree to these terms,
             do not access or use the Services.
@@ -50,7 +50,7 @@ export default function Terms() {
             <ListItem>
               <Text as="span">
                 The Services contain copyrighted material, trademarks and other proprietary information including text,
-                software, photos, videos, graphics and logos. This intellectual property is owned by Restrafes XCS or
+                software, photos, videos, graphics and logos. This intellectual property is owned by Amperra Wyre or
                 its licensors and protected by copyright and other laws. All rights are reserved. You may not modify,
                 publish, transmit, distribute, publicly perform or display, sell or create derivative works of such
                 content.
@@ -100,7 +100,7 @@ export default function Terms() {
 
             <ListItem>
               <Text as="span">
-                These terms constitute the entire agreement between you and Restrafes XCS with respect to your use of
+                These terms constitute the entire agreement between you and Amperra Wyre with respect to your use of
                 the Services. They supersede any prior agreements.
               </Text>
             </ListItem>

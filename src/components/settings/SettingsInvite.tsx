@@ -67,7 +67,7 @@ export default function SettingsInvite() {
           You have {currentUser?.platform?.invites || 0} referral credit{currentUser?.platform?.invites === 1 ? '' : 's'}.
         </Heading>
         <Text fontSize={'md'} color={"gray.500"}>
-          Who&apos;s a great addition to XCS? Invite them to join!
+          Who&apos;s a great addition to wyre? Invite them to join!
         </Text>
         <Button
           mt={4}

@@ -211,7 +211,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                 url: avatarUrl
               },
               author: {
-                name: 'Restrafes XCS',
+                name: 'Amperra Wyre',
                 url: 'https://wyre.ryj.my.id',
                 icon_url: avatarUrl
               },

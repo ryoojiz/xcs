@@ -78,10 +78,10 @@ export default function Login() {
 
     <>
       <Head>
-        <title>Login - Restrafes XCS</title>
+        <title>Login - Amperra Wyre</title>
         <meta
           name="description"
-          content="Login - Restrafes XCS"
+          content="Login - Amperra Wyre"
         />
         <link
           rel="icon"
@@ -89,15 +89,15 @@ export default function Login() {
         />
         <meta
           name="og:site_name"
-          content="Restrafes XCS"
+          content="Amperra Wyre"
         />
         <meta
           name="og:title"
-          content="Login - Restrafes XCS"
+          content="Login - Amperra Wyre"
         />
         <meta
           name="og:description"
-          content="Authenticate into Restrafes XCS."
+          content="Authenticate into Amperra Wyre."
         />
         <meta
           name="og:type"
@@ -129,9 +129,9 @@ export default function Login() {
           <ModalCloseButton />
           <ModalBody>
             <>
-              <Text fontWeight={'bold'}>What is Restrafes XCS?</Text>
+              <Text fontWeight={'bold'}>What is Amperra Wyre?</Text>
               <Text>
-                Restrafes XCS is an online access point control platform developed by RESTRAFES & CO that allows
+                Amperra Wyre is an online access point control platform developed by RESTRAFES & CO that allows
                 organizations to manage and control access to their facilities remotely.
               </Text>
             </>
@@ -139,7 +139,7 @@ export default function Login() {
             <>
               <Text fontWeight={'bold'}>What is my login?</Text>
               <Text>
-                Your login for Restrafes XCS is the email address that was used to invite you to the platform. If you
+                Your login for Amperra Wyre is the email address that was used to invite you to the platform. If you
                 are unsure of your login or did not receive an invitation, please contact your sponsor or email
                 xcs@restrafes.co for assistance.
               </Text>

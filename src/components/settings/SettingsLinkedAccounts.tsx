@@ -163,7 +163,7 @@ export default function SettingsLinkedAccounts() {
             </>
           ) : (
             <>
-              <Text py={1}>You have not linked your Roblox account. Please link one to use Restrafes XCS.</Text>
+              <Text py={1}>You have not linked your Roblox account. Please link one to use Amperra Wyre.</Text>
               <ButtonGroup mt={4}>
                 <Button
                   onClick={() => {
@@ -190,7 +190,7 @@ export default function SettingsLinkedAccounts() {
             Discord
           </Heading>
           <Text py={1}>
-            Link your Discord account to Restrafes XCS to receive the <Text as={'strong'}>XCS</Text> role on the{' '}
+            Link your Discord account to Amperra Wyre to receive the <Text as={'strong'}>XCS</Text> role on the{' '}
             <Link href={'https://discord.gg/BWVa3yE9M3'} target='_blank' textDecor={'underline'}>
               R&C Community
             </Link>.

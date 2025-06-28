@@ -53,7 +53,7 @@ export default function UserProfileNS({ user }: any) {
       <Head>
         <meta
           property="og:site_name"
-          content="Restrafes XCS"
+          content="Amperra Wyre"
         />
         {user ? (
           <>
@@ -68,7 +68,7 @@ export default function UserProfileNS({ user }: any) {
             <meta
               property="og:description"
               content={`Join ${user?.displayName || user.name.first
-                } and a community of architects in managing access points on Restrafes XCS.`}
+                } and a community of architects in managing access points on Amperra Wyre.`}
             />
             <meta
               property="og:image"
@@ -87,7 +87,7 @@ export default function UserProfileNS({ user }: any) {
             />
             <meta
               property="og:description"
-              content={`Join a community of architects in managing access points on Restrafes XCS.`}
+              content={`Join a community of architects in managing access points on Amperra Wyre.`}
             />
           </>
         )}

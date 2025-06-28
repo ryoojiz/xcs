@@ -146,7 +146,7 @@ export default function SettingsProfile() {
                       toast({
                         title: "You've been logged out.",
                         description:
-                          "Because you've changed your email address, you have been logged out. Please log in again with your new email address to continue using Restrafes XCS.",
+                          "Because you've changed your email address, you have been logged out. Please log in again with your new email address to continue using Amperra Wyre.",
                         status: 'info',
                         duration: 9000,
                         isClosable: true

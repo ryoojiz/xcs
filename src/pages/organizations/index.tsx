@@ -325,14 +325,14 @@ export default function PlatformOrganizations() {
   return (
     <>
       <Head>
-        <title>Organizations - Restrafes XCS</title>
+        <title>Organizations - Amperra Wyre</title>
         <meta
           property="og:title"
-          content="Manage Organizations - Restrafes XCS"
+          content="Manage Organizations - Amperra Wyre"
         />
         <meta
           property="og:site_name"
-          content="Restrafes XCS"
+          content="Amperra Wyre"
         />
         <meta
           property="og:url"

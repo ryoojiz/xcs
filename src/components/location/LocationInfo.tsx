@@ -352,7 +352,7 @@ export default function LocationInfo({ location, query, idToken, refreshData }: 
                           View Experience
                         </Button>
                       </InputGroup>
-                      <FormHelperText>This cannot be changed once set.</FormHelperText>
+                      <FormHelperText>Universe ID will be automatically set once you insert the template into a published game and run it. This cannot be changed once set.</FormHelperText>
                     </FormControl>
                   )}
                 </Field>

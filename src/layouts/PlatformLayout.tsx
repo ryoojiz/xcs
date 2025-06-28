@@ -106,7 +106,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 {!user?.emailVerified && (
                   <PlatformAlert
                     title={'Action needed'}
-                    description={'Please verify your email address to continue using Restrafes XCS.'}
+                    description={'Please verify your email address to continue using Amperra Wyre.'}
                     isClosable={true}
                     button={{
                       text: 'Resend verification email',
@@ -144,7 +144,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 {!currentUser?.roblox.verified && (
                   <PlatformAlert
                     title={'Action needed'}
-                    description={'Please verify your Roblox account to continue using Restrafes XCS.'}
+                    description={'Please verify your Roblox account to continue using Amperra Wyre.'}
                     isClosable={true}
                     button={{
                       text: 'Verify Roblox account',

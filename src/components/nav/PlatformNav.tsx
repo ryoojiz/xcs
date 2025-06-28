@@ -376,7 +376,7 @@ export default function PlatformNav({ type, title }: { type?: string; title?: st
                 priority={true}
                 fill={true}
                 quality={64}
-                alt={'Restrafes XCS'}
+                alt={'Amperra Wyre'}
                 style={{
                   objectFit: 'contain'
                 }}
@@ -529,7 +529,7 @@ export default function PlatformNav({ type, title }: { type?: string; title?: st
               priority={true}
               fill={true}
               quality={50}
-              alt={'Restrafes XCS'}
+              alt={'Amperra Wyre'}
               style={{
                 objectFit: 'contain'
               }}

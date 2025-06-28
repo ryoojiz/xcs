@@ -38,10 +38,10 @@ export default function Recover() {
   return (
     <>
       <Head>
-        <title>Recover Account - Restrafes XCS</title>
+        <title>Recover Account - Amperra Wyre</title>
         <meta
           name="description"
-          content="Recover Account - Restrafes XCS"
+          content="Recover Account - Amperra Wyre"
         />
         <link
           rel="icon"
@@ -49,15 +49,15 @@ export default function Recover() {
         />
         <meta
           name="og:site_name"
-          content="Restrafes XCS"
+          content="Amperra Wyre"
         />
         <meta
           name="og:title"
-          content="Recover Account - Restrafes XCS"
+          content="Recover Account - Amperra Wyre"
         />
         <meta
           name="og:description"
-          content="Recover your Restrafes XCS account."
+          content="Recover your Amperra Wyre account."
         />
         <meta
           name="og:type"

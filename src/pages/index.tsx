@@ -18,7 +18,7 @@ export default function Homepage({ allPostsData }: { allPostsData: any }) {
   return (
     <>
       <Head>
-        <title>Home - Restrafes XCS</title>
+        <title>Home - Amperra Wyre</title>
         <meta
           property="og:title"
           content="Home - Wyre Management"

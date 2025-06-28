@@ -135,14 +135,14 @@ export default function PlatformLocation() {
   return (
     <>
       <Head>
-        <title>{location?.name} - Restrafes XCS</title>
+        <title>{location?.name} - Amperra Wyre</title>
         <meta
           property="og:title"
-          content="Manage Location - Restrafes XCS"
+          content="Manage Location - Amperra Wyre"
         />
         <meta
           property="og:site_name"
-          content="Restrafes XCS"
+          content="Amperra Wyre"
         />
         <meta
           property="og:url"

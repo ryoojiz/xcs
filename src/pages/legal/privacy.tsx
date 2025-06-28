@@ -7,7 +7,7 @@ export default function Terms() {
   return (
     <>
       <Head>
-        <title>Privacy Policy - Restrafes XCS</title>
+        <title>Privacy Policy - Amperra Wyre</title>
       </Head>
       <Nav />
       <Box bg={useColorModeValue('black', 'white')} w={'full'} h={'240px'} />

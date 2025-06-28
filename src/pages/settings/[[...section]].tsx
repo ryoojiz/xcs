@@ -180,14 +180,14 @@ export default function Settings() {
   return (
     <>
       <Head>
-        <title>Settings - Restrafes XCS</title>
+        <title>Settings - Amperra Wyre</title>
         <meta
           property="og:title"
-          content="Settings - Restrafes XCS"
+          content="Settings - Amperra Wyre"
         />
         <meta
           property="og:site_name"
-          content="Restrafes XCS"
+          content="Amperra Wyre"
         />
         <meta
           property="og:url"

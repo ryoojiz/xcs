@@ -142,7 +142,7 @@ export default function Verify() {
   return (
     <>
       <Head>
-        <title>Verification - Restrafes XCS</title>
+        <title>Verification - Amperra Wyre</title>
       </Head>
       <Container
         maxW={'container.lg'}

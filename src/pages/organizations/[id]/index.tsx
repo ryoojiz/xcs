@@ -94,14 +94,14 @@ export default function OrganizationPublic({ organization }: { organization: Org
   return (
     <>
       <Head>
-        <title>{organization?.name} - Restrafes XCS</title>
+        <title>{organization?.name} - Amperra Wyre</title>
         <meta
           property="og:title"
-          content={`${organization?.name} - Restrafes XCS`}
+          content={`${organization?.name} - Amperra Wyre`}
         />
         <meta
           property="og:site_name"
-          content="Restrafes XCS"
+          content="Amperra Wyre"
         />
         <meta
           property="og:url"
@@ -109,7 +109,7 @@ export default function OrganizationPublic({ organization }: { organization: Org
         />
         <meta
           property="og:description"
-          content={`${organization?.name} is one of many organizations that use Restrafes XCS to manage their access points.`}
+          content={`${organization?.name} is one of many organizations that use Amperra Wyre to manage their access points.`}
         />
         <meta
           property="og:type"

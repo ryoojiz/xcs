@@ -114,9 +114,9 @@ export default function Profile({ username, user }: { username: string | null; u
     <>
       <Head>
         {user ? (
-          <title>{`${user?.displayName || user?.name?.first}'s Profile`} - Restrafes XCS</title>
+          <title>{`${user?.displayName || user?.name?.first}'s Profile`} - Amperra Wyre</title>
         ) : (
-          <title>{`Profile - Restrafes XCS`}</title>
+          <title>{`Profile - Amperra Wyre`}</title>
         )}
       </Head>
       <Container

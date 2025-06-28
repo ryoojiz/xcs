@@ -347,14 +347,14 @@ export default function PlatformAccessPoint() {
   return (
     <>
       <Head>
-        <title>{accessPoint?.name} - Restrafes XCS</title>
+        <title>{accessPoint?.name} - Amperra Wyre</title>
         <meta
           property="og:title"
-          content="Manage Access Point - Restrafes XCS"
+          content="Manage Access Point - Amperra Wyre"
         />
         <meta
           property="og:site_name"
-          content="Restrafes XCS"
+          content="Amperra Wyre"
         />
         <meta
           property="og:url"

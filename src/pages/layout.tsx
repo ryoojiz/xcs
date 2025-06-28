@@ -6,7 +6,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <Head>
         <meta
           name="description"
-          content="Restrafes XCS"
+          content="Amperra Wyre"
         />
         <link
           rel="icon"
@@ -14,11 +14,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         />
         <meta
           property="og:site_name"
-          content="Restrafes XCS"
+          content="Amperra Wyre"
         />
         <meta
           property="og:title"
-          content="Restrafes XCS"
+          content="Amperra Wyre"
         />
         <meta
           property="og:type"

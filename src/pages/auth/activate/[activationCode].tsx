@@ -62,10 +62,10 @@ export default function Activate({ valid }: { valid: boolean }) {
   return (
     <>
       <Head>
-        <title>Activate Account - Restrafes XCS</title>
+        <title>Activate Account - Amperra Wyre</title>
         <meta
           name="description"
-          content="Activate Account - Restrafes XCS"
+          content="Activate Account - Amperra Wyre"
         />
         <link
           rel="icon"
@@ -73,15 +73,15 @@ export default function Activate({ valid }: { valid: boolean }) {
         />
         <meta
           name="og:site_name"
-          content="Restrafes XCS"
+          content="Amperra Wyre"
         />
         <meta
           name="og:title"
-          content="Activate Account - Restrafes XCS"
+          content="Activate Account - Amperra Wyre"
         />
         <meta
           name="og:description"
-          content="Activate your Restrafes XCS account."
+          content="Activate your Amperra Wyre account."
         />
         <meta
           name="og:type"
