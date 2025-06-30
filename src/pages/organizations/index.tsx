@@ -392,14 +392,14 @@ export default function PlatformOrganizations() {
             leftIcon={<MdOutlineAddCircle />}
             onClick={onCreateOrganizationModalOpen}
           >
-            New
+            New Organization
           </Button>
           <Button
             variant={'solid'}
             leftIcon={<MdOutlineJoinRight />}
             onClick={onJoinOrganizationModalOpen}
           >
-            Join
+            Join Organization
           </Button>
           <Button
             variant={'solid'}

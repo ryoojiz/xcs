@@ -46,7 +46,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   if (req.method === 'GET') {
     // Prepare file
-    const filePath = path.join(process.cwd(), 'xcs-starter.rbxmx');
+    const filePath = path.join(process.cwd(), 'wyre-starter.rbxmx');
     let buffer = fs.readFileSync(filePath);
 
     // Check if API Key already exists for this location that hasn't been used yet

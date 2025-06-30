@@ -119,7 +119,7 @@ export default function LocationInfo({ location, query, idToken, refreshData }: 
           const url = window.URL.createObjectURL(new Blob([blob]));
           const link = document.createElement('a');
           link.href = url;
-          link.setAttribute('download', `xcs-template-${locationName}.rbxmx`);
+          link.setAttribute('download', `wyre-template-${locationName}.rbxmx`);
           document.body.appendChild(link);
           link.click();
           link.parentNode?.removeChild(link);

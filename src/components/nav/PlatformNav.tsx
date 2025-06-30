@@ -464,7 +464,7 @@ export default function PlatformNav({ type, title }: { type?: string; title?: st
                 Settings
               </NavLink>
               <NavLink
-                href={'https://xcs-docs.restrafes.co/'}
+                href={'https://wyre.gitbook.io/wyre-docs'}
                 target={'_blank'}
                 pathname={pathname}
                 leftIcon={<AiFillInfoCircle />}
@@ -472,7 +472,7 @@ export default function PlatformNav({ type, title }: { type?: string; title?: st
                 Help & Information
               </NavLink>
               <NavLink
-                href={'https://xcs-docs.restrafes.co/'}
+                href={'https://wyre.gitbook.io/wyre-docs'}
                 target={'_blank'}
                 pathname={pathname}
                 leftIcon={<BiSolidStoreAlt />}
