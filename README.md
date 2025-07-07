@@ -1,6 +1,6 @@
-# R&C XCS - Card Access Management Platform
+# Amperra Wyre - Card Access Management Platform
 
-R&C XCS is a card access management platform that allows users to manage their card access to access points within experiences on the Roblox platform.
+Amperra Wyre is a card access management platform that allows users to manage their card access to access points within experiences on the Roblox platform.
 
 ### Features:
 - Create and manage access points
